@@ -1,0 +1,111 @@
+/* General page setup */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+/* ATM container */
+.atm-container {
+  background: #1b1b1b;
+  padding: 30px;
+  border-radius: 20px;
+  width: 380px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  border: 2px solid #444;
+}
+
+/* Screen at top of ATM */
+.screen {
+  background: #0a0a0a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #555;
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
+}
+
+/* Screen text */
+.screen h1 {
+  font-size: 1.4em;
+  margin: 0;
+  min-height: 40px;
+  line-height: 1.3em;
+}
+
+/* Buttons area */
+#buttonsArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* General buttons */
+button {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 15px 0;
+  margin: 5px 0;
+  border-radius: 12px;
+  font-size: 1.1em;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #ff8533;
+  transform: scale(1.05);
+}
+
+/* Keypad layout */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.keypad button {
+  grid-column: span 1;
+  padding: 15px 18px;
+  font-size: 1.2em;
+}
+
+/* Display for PIN, amount, account */
+#pinDisplay, #amountDisplay, #accountDisplay {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  letter-spacing: 4px;
+  background: #0f0f0f;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  width: 100%;
+}
+
+/* Back button styling */
+#backBtn {
+  background-color: #c0392b !important;
+}
+
+#backBtn:hover {
+  background-color: #e74c3c !important;
+}
+
+/* Add subtle shadow to buttons for depth */
+button {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+/* Professional look: highlight current hovered button */
+button:focus, button:hover {
+  outline: 2px solid #fff;
+}

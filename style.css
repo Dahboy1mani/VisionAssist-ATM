@@ -1,7 +1,7 @@
 /* General page setup */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #2c3e50, #3498db);
+  background: linear-gradient(135deg, #dfe2e4, #bbc8d1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +48,7 @@ body {
 
 /* General buttons */
 button {
-  background-color: #ff6600;
+  background-color: #1460c5;
   color: #fff;
   border: none;
   padding: 15px 0;
@@ -61,7 +61,7 @@ button {
 }
 
 button:hover {
-  background-color: #ff8533;
+  background-color: #606075;
   transform: scale(1.05);
 }
 

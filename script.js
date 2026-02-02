@@ -7,8 +7,8 @@ let balance = 5000;
 function speak(text, lang = currentLang) {
   const speech = new SpeechSynthesisUtterance(text);
   speech.lang = lang;
-  speech.rate = 0.7;
-  speech.pitch = 1.1;
+  speech.rate = 0.85;
+  speech.pitch = 0;
   window.speechSynthesis.cancel();
   window.speechSynthesis.speak(speech);
 }
